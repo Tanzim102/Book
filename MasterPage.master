@@ -1,0 +1,73 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<title>ebook site</title>
+	<link rel="stylesheet" type="text/css" href="ebook_2.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+</head>
+<body>
+
+	<header>
+        <form id="formx" runat="server">
+		<div class = "row">
+			<!--<div class="logo">
+			<img src="logo.png">	
+			</div>-->
+
+	<ul class="main-nav">
+				<li class="active"> <a href="home.aspx"> HOME </a></li>
+				<li> <a href="listview.aspx"> RECOMMENDED </a></li>
+				<li class="dropdown">
+				<a href="javascript:void(0)" class="dropbtn">CATAGORIES</a>
+				  <div class="dropdown-content">
+      <a href="science_fic.aspx">SCIENCE_FICTION</a>
+      <a href="action_adventure.aspx">ACTION & ADVENTURE</a>
+      <a href="drama.aspx">DRAMA</a>
+      <a href="satire.aspx">SATIRE</a>
+      <a href="horror.aspx">HORROR</a>
+      <a href="romance.aspx">ROMANCE</a>
+      <a href="detective.aspx">DETECTIVE</a>
+      <a href="historial_fic.aspx">HISTORICAL FICTION</a>
+      <a href="thrillers.aspx">THRILLERS</a>
+
+    </div>
+  </li>
+
+
+				  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">EBOOK-SERVICES</a>
+    <div class="dropdown-content">
+      <a href="#">FREE DOWNLOAD</a>
+      <a href="bookentry.aspx">RECENTLY ADDED BOOKS</a>
+      <a href="book_upload.aspx">UPLOAD A BOOK</a>
+    </div>
+  </li>
+                <li> <a href="Login.aspx"> LOGIN </a></li>
+                <li> <a href="Logout.aspx"> LOGOUT </a></li>
+              
+
+                                  
+                <li> <a href="REGISTER_INFO.aspx"> REGISTER
+&nbsp;</a></li>
+                
+			</ul>
+		</div>
+        <asp:Label ID="hello" runat="server" Text="Hello, Saif Bhai !" style="color: #FFFFFF; top: 60px; left: 42px; position: absolute; height: 18px; width: 154px; font-size: medium; font-weight: 700; font-style: italic"></asp:Label>
+
+		</div>
+		    <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+            </asp:ContentPlaceHolder>
+        </form>
+		</div>
+    
+	</header>
+   
+   
+ </body>
+
+</html>
